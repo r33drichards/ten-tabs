@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Ten Tabs",
+  "version": "1.0.0",
+  "description": "Caps this browser at ten tabs. Choose a tab to replace when you reach the limit.",
+  "permissions": [
+    "tabs",
+    "storage",
+    "notifications"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Ten Tabs — choose a tab to replace",
+    "default_popup": "popup.html"
+  }
+}
